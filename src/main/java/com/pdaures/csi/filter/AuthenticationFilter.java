@@ -31,9 +31,6 @@ public class AuthenticationFilter implements Filter {
 
 	private AuthenticationService service;
 
-	//Current request's security token
-	private String securityToken;
-
 	public void init(FilterConfig filterConfig) throws ServletException {
 		LOG.info("Starting "+getClass().getSimpleName());
 		service = FilterUtils.getBeanOfType(filterConfig, AuthenticationService.class);
@@ -69,7 +66,7 @@ public class AuthenticationFilter implements Filter {
 	 * @throws UnauthorizedException
 	 */
 	public ServletRequest authorizeUser(HttpServletRequest request) throws UnauthorizedException {
-		this.securityToken = request.getParameter(TOKEN);
+		String securityToken = request.getParameter(TOKEN);
 		if (securityToken == null || securityToken.isEmpty()) {
 			LOG.info("No token provided, returning Forbidden");
 			throw new UnauthorizedException("");
