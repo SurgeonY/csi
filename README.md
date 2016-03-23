@@ -23,7 +23,7 @@ A user can access his account and see 2 informations :
 - first name
 - last name
 - Example for user Barack Obama : http://localhost:8080/csi/accountOverview.htm?token=token_obama
-- Example for user Angela Merkel :http://localhost:8080/csi/accountOverview.htm?token=token_merkel
+- Example for user Angela Merkel : http://localhost:8080/csi/accountOverview.htm?token=token_merkel
  
 
 The application keeps some metrics about user activity:
@@ -35,11 +35,11 @@ The application keeps some metrics about user activity:
 - Java 7 + Servlet 2.5 + Spring MVC + Spring JdbcTemplate + H2 in memory DB
 
 #Webapp architecture
-- [Architecture](https://github.com/pdaures/csi/blob/master/architecture.md)
+- [Architecture](architecture.md)
 
 #Investigation cases
-- [case 1](https://github.com/pdaures/csi/blob/master/case1.md)
-- [case 2](https://github.com/pdaures/csi/blob/master/case2.md)
-- [case 3](https://github.com/pdaures/csi/blob/master/case3.md) 
-- [case 4](https://github.com/pdaures/csi/blob/master/case4.md)
-- [case 5](https://github.com/pdaures/csi/blob/master/case5.md)
+- [case 1](case1.md)
+- [case 2](case2.md)
+- [case 3](case3.md) 
+- [case 4](case4.md)
+- [case 5](case5.md)
